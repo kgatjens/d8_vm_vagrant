@@ -7,7 +7,6 @@ Drupal VM makes building Drupal development environments quick and easy, and int
 It will install the following on an Ubuntu 16.04 (by default) linux VM:
 
   - Drupal 8, with this modules:
-    -
   - Apache 2.4.x (or Nginx)
   - PHP 7.1.x (configurable)
   - MySQL 5.7.x (or MariaDB, or PostgreSQL)
