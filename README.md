@@ -8,7 +8,6 @@ It will install the following on an Ubuntu 16.04 (by default) linux VM:
 
   - Drupal 8, with this modules:
     -
-
   - Apache 2.4.x (or Nginx)
   - PHP 7.1.x (configurable)
   - MySQL 5.7.x (or MariaDB, or PostgreSQL)
@@ -34,7 +33,7 @@ It will install the following on an Ubuntu 16.04 (by default) linux VM:
 It should take 5-10 minutes to build or rebuild the VM from scratch on a decent broadband connection.
 
 
-## Quick Start Guide
+### Quick Start Guide
 
   1. Install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
   2. Download or clone this project to your workstation.
@@ -89,7 +88,7 @@ By default, this VM includes the extras listed in the `config.yml` option `insta
 
 If you don't want or need one or more of these extras, just delete them or comment them from the list. This is helpful if you want to reduce PHP memory usage or otherwise conserve system resources.
 
-## System Requirements
+### System Requirements
 
 Drupal VM runs on almost any modern computer that can run VirtualBox and Vagrant, however for the best out-of-the-box experience, it's recommended you have a computer with at least:
 
@@ -97,7 +96,7 @@ Drupal VM runs on almost any modern computer that can run VirtualBox and Vagrant
   - At least 4 GB RAM (higher is better)
   - An SSD (for greater speed with synced folders)
 
-## Other Notes
+### Other Notes
 
   - To shut down the virtual machine, enter `vagrant halt` in the Terminal in the same folder that has the `Vagrantfile`. To destroy it completely (if you want to save a little disk space, or want to rebuild it from scratch with `vagrant up` again), type in `vagrant destroy`.
   - To log into the virtual machine, enter `vagrant ssh`. You can also get the machine's SSH connection details with `vagrant ssh-config`.
@@ -112,7 +111,7 @@ Drupal VM runs on almost any modern computer that can run VirtualBox and Vagrant
 This project is licensed under the MIT open source license.
 
 
-Thanks so much to [Jeff Geerling](https://www.jeffgeerling.com/) the creator of the VM, I just add a Drupal 8 setup, we cool modules to install a development.
+Thanks so much to [Jeff Geerling](https://www.jeffgeerling.com/) the creator of the VM, I just add a Drupal 8 setup, with cool modules to start a project development.
 
 More info from the DrupalVM: http://docs.drupalvm.com/
 
