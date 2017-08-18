@@ -7,6 +7,7 @@ Drupal VM makes building Drupal development environments quick and easy, and int
 It will install the following on an Ubuntu 16.04 (by default) linux VM:
 
   - Drupal 8, with this modules:
+    - Drush
   - Apache 2.4.x (or Nginx)
   - PHP 7.1.x (configurable)
   - MySQL 5.7.x (or MariaDB, or PostgreSQL)
@@ -37,7 +38,7 @@ It should take 5-10 minutes to build or rebuild the VM from scratch on a decent 
   1. Install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
   2. Download or clone this project to your workstation.
   3. `cd` into this project directory and run `vagrant up`.
-  4. Extract and Import the database that is inside `db/d8_db.sql.gz` . I suggest to use the 'Adminer' tool, and import the file under: d8_db (MySql)
+  4. Extract and Import the database that is inside `db/d8_db.sql.gz` . I suggest to use the 'Adminer' tool, and import the file under: d8_db data base (MySql)
 
 
 ### 1 - Install Vagrant and VirtualBox
@@ -51,13 +52,13 @@ Notes:
   - **For faster provisioning** (macOS/Linux only): *[Install Ansible](http://docs.ansible.com/intro_installation.html) on your host machine, so Drupal VM can run the provisioning steps locally instead of inside the VM.*
   - **For stability**: Because every version of VirtualBox introduces changes to networking, for the best stability, you should install Vagrant's `vbguest` plugin: `vagrant plugin install vagrant-vbguest`.
   - **NFS on Linux**: *If NFS is not already installed on your host, you will need to install it to use the default NFS synced folder configuration. See guides for [Debian/Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-14-04), [Arch](https://wiki.archlinux.org/index.php/NFS#Installation), and [RHEL/CentOS](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-centos-6).*
-  - **Versions**: *Make sure you're running the latest releases of Vagrant, VirtualBox, and Ansible—as of late 2016, Drupal VM recommends: Vagrant 1.8.6, VirtualBox 5.1.10+, and Ansible 2.2.x*
+  - **Versions**: *Make sure you're running the latest releases of Vagrant, VirtualBox, and Ansible—as of late 2016, Drupal VM recommends: Vagrant 1.8.4, VirtualBox 5.1.10+, and Ansible 2.2.x*
 
 ### 3 - Access the VM.
 
 Open your browser and access [http://drupalvm.dev/](http://drupalvm.dev/). The default login for the admin account is `admin` for both the username and password.
 
-Note: *By default Drupal VM is configured to use `192.168.88.88` as its IP, if you're running multiple VM's the `auto_network` plugin (`vagrant plugin install vagrant-auto_network`) can help with IP address management if you set `vagrant_ip` to `0.0.0.0` inside `config.yml`.*
+Note: *By default Drupal VM is configured to use `192.168.88.99` as its IP, if you're running multiple VM's the `auto_network` plugin (`vagrant plugin install vagrant-auto_network`) can help with IP address management if you set `vagrant_ip` to `0.0.0.0` inside `config.yml`.*
 
 ## Extra software/utilities
 

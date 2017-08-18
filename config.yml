@@ -15,9 +15,9 @@ vagrant_gui: false
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: local.d8.dev
-vagrant_machine_name: local.d8.dev
-vagrant_ip: 192.168.88.99
+vagrant_hostname: d8.local
+vagrant_machine_name: d8.local
+vagrant_ip: 192.168.88.98
 
 # Allow Drupal VM to be accessed via a public network interface on your host.
 # Vagrant boxes are insecure by default, so be careful. You've been warned!
