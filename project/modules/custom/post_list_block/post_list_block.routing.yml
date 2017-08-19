@@ -1,8 +1,0 @@
-
-post_list_block.content:
-  path: '/say_hello'
-  defaults:
-    _title: 'Post List Title'
-    _controller: '\Drupal\post_list_block\Controller\PostListController::content'
-  requirements:
-    _permission: 'access content'
