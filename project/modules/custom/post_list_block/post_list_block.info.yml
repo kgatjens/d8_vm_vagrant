@@ -1,0 +1,15 @@
+name: Post List Block
+# core: 8.x
+description: Add a Block, with a view list from one content type
+package: Custom
+type: module
+dependencies:
+    - drupal:views
+    - drupal:block
+
+
+# Information added by Drupal.org packaging script on 2017-05-04
+version: '8.x-1.4'
+core: '8.x'
+project: 'post_list_block'
+datestamp: 1493885892
