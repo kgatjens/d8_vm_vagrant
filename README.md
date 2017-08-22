@@ -40,7 +40,7 @@ It should take 5-10 minutes to build or rebuild the VM from scratch on a decent 
   3. `cd` into this project directory and run `vagrant up`.
   4. Extract and Import the database that is inside `db/d8_db.sql.gz` . I suggest to use the 'Adminer' tool, and import the file under: d8_db data base (MySql)
   5. Install the less-watch-compiler :: https://github.com/jonycheung/deadsimple-less-watch-compiler
-  6. go to: .project/themes/boots_theme and run: `less-watch-compiler less css style.less` 
+  6. go to: .project/themes/boots_theme and run: `less-watch-compiler less css style.less`  
 
 
 ### 1 - Install Vagrant and VirtualBox
