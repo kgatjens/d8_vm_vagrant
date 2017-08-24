@@ -1,0 +1,37 @@
+{#
+Custom template for custom example view
+#}
+!!!
+
+{# Using  views-view-fields--all_content--block-1.html.twig #}
+{# 
+<span>{{ fields.title.content }},</span>
+<span>{{ fields.body.content }}</span>
+<h1>{{ fields.field_date.content }}</h1>
+#}
+
+
+{% if title %}
+   <h3>{{ title }}</h3>
+}
+{% endif %}
+
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+   {#  {{ row.content }} #} {# display all the content #} 
+
+  <div class="content_all_test_item" > 
+    <h3>{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] }}</h3>
+    <p>{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ body }}'] }}</p>
+    <h4>{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_date }}'] }}</h4>
+  </div>
+
+  {# {{ dump(row.content) }} #}
+  </div>
+{% endfor %}
+	
